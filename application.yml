@@ -31,19 +31,13 @@ plugins:
   lavasrc:
     sources:
       spotify: true
-      applemusic: true
-      deezer: true
-      yandexmusic: true
+      applemusic: false
+      deezer: false
+      yandexmusic: false
     spotify:
       clientId: "${SPOTIFY_CLIENT_ID:}"
       clientSecret: "${SPOTIFY_CLIENT_SECRET:}"
       countryCode: "US"
-    applemusic:
-      countryCode: "US"
-    deezer:
-      masterDecryptionKey: "${DEEZER_MASTER_KEY:}"
-    yandexmusic:
-      accessToken: "${YANDEX_ACCESS_TOKEN:}"
 
 logging:
   file:
